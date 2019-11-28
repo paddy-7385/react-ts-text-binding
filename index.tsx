@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
+import HelloFunc from './HelloFunc';
 import './style.css';
 
 interface AppProps { }
@@ -20,6 +21,7 @@ class App extends Component<AppProps, AppState> {
     return (
       <div>
         <Hello name={this.state.name} />
+        <HelloFunc name={this.state.name} />
       </div>
     );
   }
